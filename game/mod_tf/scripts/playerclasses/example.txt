@@ -1,0 +1,43 @@
+//
+// Frog Fortress - Example Player Class, the Example!
+//
+PlayerClass
+{
+	// Attributes.
+	"name"			"Example"
+	"localize_name"	"TF_Class_Name_Example"
+	
+	"model"			"models/player/soldier.mdl"
+	"model_hwm"		"models/player/hwm/soldier.mdl"
+	"model_bot"		"models/bots/soldier/bot_soldier.mdl"
+	"model_hands"	"models/weapons/c_models/c_soldier_arms.mdl"
+	
+	"speed_max"			"320"
+	"health_max"		"150"
+
+	// Grenades.
+	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
+	"grenade2"		"TF_WEAPON_GRENADE_NAIL"
+
+	// Weapons.
+	"weapon1"		"TF_WEAPON_SHOVEL"
+	"weapon2"		"TF_WEAPON_SHOVEL"
+	"weapon3"		"TF_WEAPON_SHOVEL"
+	
+	//"DontDoNewJump"	"1"
+
+	AmmoMax
+	{
+		"tf_ammo_primary"	"32"
+		"tf_ammo_secondary"	"32"
+		"tf_ammo_metal"		"200"
+		"tf_ammo_grenades1"	"1"
+		"tf_ammo_grenades2"	"1"
+	}	
+	
+	// Death Sounds
+	"sound_death"				"Soldier.Death"
+	"sound_crit_death"				"Soldier.CritDeath"
+	"sound_melee_death"			"Soldier.MeleeDeath"
+	"sound_explosion_death"			"Soldier.ExplosionDeath"	
+}

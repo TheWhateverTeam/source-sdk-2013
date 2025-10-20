@@ -47,6 +47,7 @@ const char *g_aPlayerClassNames[TF_CLASS_MENU_BUTTONS] =
 	"#TF_Class_Name_Pyro",
 	"#TF_Class_Name_Spy",
 	"#TF_Class_Name_Engineer",
+	"#TF_Class_Name_Example",
 	"#TF_Class_Name_Civilian",
 	"",
 	"#TF_Random"
@@ -64,6 +65,7 @@ const char *g_aPlayerClassNames_NonLocalized[TF_CLASS_MENU_BUTTONS] =
 	"Pyro",
 	"Spy",
 	"Engineer",
+	"Example",
 	"Civilian",
 	"",
 	"Random"
@@ -81,6 +83,7 @@ const char *g_aRawPlayerClassNamesShort[TF_CLASS_MENU_BUTTONS] =
 	"pyro",
 	"spy",
 	"engineer",
+	"example",
 	"civilian",
 	"",
 	"random"
@@ -98,6 +101,7 @@ const char *g_aRawPlayerClassNames[TF_CLASS_MENU_BUTTONS] =
 	"pyro",
 	"spy",
 	"engineer",
+	"example",
 	"civilian",
 	"",
 	"random"
@@ -225,6 +229,7 @@ int iRemapIndexToClass[TF_CLASS_MENU_BUTTONS] =
 		TF_CLASS_MEDIC,
 		TF_CLASS_SNIPER,
 		TF_CLASS_SPY,
+		TF_CLASS_EXAMPLE,
 		0,
 		0,
 		TF_CLASS_RANDOM
@@ -1637,7 +1642,8 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"tf_weapon_shotgun_hwg",	// TF_CLASS_HEAVYWEAPONS,
 			"tf_weapon_shotgun_pyro",	// TF_CLASS_PYRO,
 			"",							// TF_CLASS_SPY,
-			"tf_weapon_shotgun_primary",// TF_CLASS_ENGINEER,		
+			"tf_weapon_shotgun_primary",// TF_CLASS_ENGINEER,	
+			"tf_weapon_shotgun_soldier",// TF_CLASS_EXAMPLE,	
 		}
 	},
 
@@ -1654,6 +1660,7 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"",							// TF_CLASS_PYRO,
 			"",							// TF_CLASS_SPY,
 			"tf_weapon_pistol",			// TF_CLASS_ENGINEER,		
+			"",							// TF_CLASS_EXAMPLE,
 		}
 	},
 
@@ -1669,7 +1676,8 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"",							// TF_CLASS_HEAVYWEAPONS,
 			"",							// TF_CLASS_PYRO,
 			"",							// TF_CLASS_SPY,
-			"",							// TF_CLASS_ENGINEER,		
+			"",							// TF_CLASS_ENGINEER,	
+			"",							// TF_CLASS_EXAMPLE,
 		}
 	},
 	{
@@ -1685,6 +1693,7 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"",							// TF_CLASS_PYRO,
 			"",							// TF_CLASS_SPY,
 			"",							// TF_CLASS_ENGINEER,		
+			"",							// TF_CLASS_EXAMPLE,	
 		}
 	},
 	{
@@ -1699,7 +1708,8 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"tf_weapon_fireaxe",		// TF_CLASS_HEAVYWEAPONS,		HWG uses a fireaxe because he doesn't have a default melee weapon of his own; also I am a terrible person
 			"tf_weapon_fireaxe",		// TF_CLASS_PYRO,
 			"tf_weapon_knife",			// TF_CLASS_SPY,
-			"tf_weapon_wrench",			// TF_CLASS_ENGINEER,		
+			"tf_weapon_wrench",			// TF_CLASS_ENGINEER,
+			"tf_weapon_fireaxe",		// TF_CLASS_EXAMPLE,			Example uses a fireaxe because he doesn't have a default melee weapon of his own; also I am a terrible person, too!
 		}
 	},
 	{
@@ -1715,6 +1725,7 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"tf_weapon_throwable_secondary",			// TF_CLASS_PYRO,
 			"tf_weapon_throwable_secondary",			// TF_CLASS_SPY,
 			"tf_weapon_throwable_secondary",			// TF_CLASS_ENGINEER,		
+			"tf_weapon_throwable_secondary",			// TF_CLASS_EXAMPLE,
 		}
 	},
 	{
@@ -1730,6 +1741,7 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"",			// TF_CLASS_PYRO,
 			""			// TF_CLASS_SPY,
 			"",			// TF_CLASS_ENGINEER,		
+			"",			// TF_CLASS_EXAMPLE,		
 		}
 	},
 	{
@@ -1744,7 +1756,8 @@ wpntranslation_class_weapons_t pszWpnEntTranslationList[] =
 			"",			// TF_CLASS_HEAVYWEAPONS
 			"",			// TF_CLASS_PYRO,
 			"tf_weapon_revolver",				// TF_CLASS_SPY,
-			"tf_weapon_revolver_secondary",		// TF_CLASS_ENGINEER,		
+			"tf_weapon_revolver_secondary",		// TF_CLASS_ENGINEER,	
+			"",			// TF_CLASS_EXAMPLE,		
 		}
 	},
 };

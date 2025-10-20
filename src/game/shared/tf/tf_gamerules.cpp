@@ -1289,7 +1289,7 @@ static CViewVectors g_TFViewVectors(
 	Vector( 0, 0, 14 )		//VEC_DEAD_VIEWHEIGHT (m_vDeadViewHeight) dead view height
 );							
 
-Vector g_TFClassViewVectors[11] =
+Vector g_TFClassViewVectors[12] =
 {
 	Vector( 0, 0, 72 ),		// TF_CLASS_UNDEFINED
 
@@ -1302,6 +1302,7 @@ Vector g_TFClassViewVectors[11] =
 	Vector( 0, 0, 68 ),		// TF_CLASS_PYRO,
 	Vector( 0, 0, 75 ),		// TF_CLASS_SPY,
 	Vector( 0, 0, 68 ),		// TF_CLASS_ENGINEER,
+	Vector( 0, 0, 68 ),		// TF_CLASS_EXAMPLE,
 
 	Vector( 0, 0, 65 ),		// TF_CLASS_CIVILIAN,		// TF_LAST_NORMAL_CLASS
 };
@@ -11233,6 +11234,7 @@ static kill_eater_event_t g_eClassKillEvents[] =
 	kKillEaterEvent_PyroKill,					// TF_CLASS_PYRO
 	kKillEaterEvent_SpyKill,					// TF_CLASS_SPY
 	kKillEaterEvent_EngineerKill,				// TF_CLASS_ENGINEER
+	kKillEaterEvent_EngineerKill,				// TF_CLASS_EXAMPLE  //Let's not deal with this right now.
 };
 COMPILE_TIME_ASSERT( ARRAYSIZE( g_eClassKillEvents ) == (TF_LAST_NORMAL_CLASS - TF_FIRST_NORMAL_CLASS) );
 
@@ -11248,6 +11250,7 @@ static kill_eater_event_t g_eRobotClassKillEvents[] =
 	kKillEaterEvent_RobotPyroKill,					// TF_CLASS_PYRO
 	kKillEaterEvent_RobotSpyKill,					// TF_CLASS_SPY
 	kKillEaterEvent_RobotEngineerKill,				// TF_CLASS_ENGINEER
+	kKillEaterEvent_RobotEngineerKill,				// TF_CLASS_EXAMPLE  //Let's not deal with this right now.
 };
 COMPILE_TIME_ASSERT( ARRAYSIZE( g_eRobotClassKillEvents ) == (TF_LAST_NORMAL_CLASS - TF_FIRST_NORMAL_CLASS) );
 

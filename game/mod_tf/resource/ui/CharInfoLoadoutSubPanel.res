@@ -263,6 +263,32 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}	
 	
+	"example"
+	{
+		"ControlName"		"ImageButton"
+		"fieldName"			"example"
+		"xpos"				"c228"
+		"ypos"				"120"
+		"zpos"				"6"
+		"wide"				"60"
+		"tall"				"120"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"labelText"			""
+		"textAlignment"		"south-west"
+		"Command"			"loadout example"
+		"Default"			"0"
+		"font"				"MenuKeys"
+		"scaleImage"		"1"
+		"activeimage"		"class_sel_sm_random_red"
+		"inactiveimage"		"class_sel_sm_random_inactive"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}
+	
 		"ShowBackpackButton"
 	{
 		"ControlName"		"ImageButton"
